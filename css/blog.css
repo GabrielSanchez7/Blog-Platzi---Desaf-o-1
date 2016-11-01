@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EFEFEF;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+header{
+    /*background-color: #1C3643;*/
+    background: #1c3643; /* Old browsers */
+    background: -moz-linear-gradient(left,  #1c3643 0%, #1e5372 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #1c3643 0%,#1e5372 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #1c3643 0%,#1e5372 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3643', endColorstr='#1e5372',GradientType=1 ); /* IE6-9 */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    line-height: 50px;
+    cursor: pointer;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.menu ul .active{
+    display: inline-block;
+    padding: 0;
+    border-top: 5px solid #d03333;
+    line-height: 50px;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    border-top: 5px solid #d03333;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.menu ul{
+    padding: 0 10px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+    padding: 0 30px;
+}
+.menu, .menu button{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu img{
+    padding-left: 15px;
+    cursor: pointer;
+}
+.menu button{
+    padding: 10px 10px;
+    font-size: 14px;
+    background-color: #7fc719;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    border-bottom: 3px solid #40882e;
+    cursor: pointer;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.menu button:hover{
+    background-color: #5d8f16;
+    border-color: #2f6321;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.buscar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0;
+}
+.buscar input, .buscar .icono{
+    padding: 8px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+.buscar .icono{
+    font-family: FontAwesome;
+    height: 34px;
+    background-color: #2a2a2a;
+    color: white;
+    cursor: pointer;
+}
