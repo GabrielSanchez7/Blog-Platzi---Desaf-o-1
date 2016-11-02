@@ -98,3 +98,65 @@ header{
     color: white;
     cursor: pointer;
 }
+.principal{
+    background-image: url('../images/prin-blog.jpg');
+    height: 600px;
+    background-size: cover;
+    border: none;
+    position: relative;
+}
+.principal .etiqueta{
+    background-color: rgba(236, 234, 234, 0.7);
+    width: 500px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.principal h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: #6a6a6a;
+    padding-bottom: 15px;
+}
+.principal .publicacion, .articulo .publicacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #6a6a6a;
+    border-top: 1px solid #6a6a6a;
+    padding-top: 15px;
+}
+.publicacion .autor{
+    display: flex;
+    align-items: center;
+}
+.articulo h3{
+    padding: 10px 0;
+}
+.autor img{
+    padding-right: 5px;
+}
+.articulo{
+    font-family: 'Ubuntu', sans-serif;
+    color: #6a6a6a;
+    text-decoration: none;
+}
+.fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.articulo, .articulo .img-art{
+    width: 385px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.img-art:hover{
+    opacity: 0.75;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
