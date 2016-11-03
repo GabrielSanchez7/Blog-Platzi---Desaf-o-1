@@ -23,33 +23,41 @@ header{
     padding: 0 15px;
 }
 .menu ul li{
-    display: inline-block;
     padding: 0;
-    border-top: 5px solid rgba(0, 0, 0, 0);
+    border-top: 5px solid transparent;
     line-height: 50px;
     cursor: pointer;
+    list-style: none;
     -webkit-transition: 0.25s;
     transition: 0.25s;
+    margin: 0;
 }
 .menu ul .active{
     display: inline-block;
     padding: 0;
-    border-top: 5px solid #d03333;
+    border-top: 5px solid #7fc719;
     line-height: 50px;
     cursor: pointer;
 }
 .menu ul li:hover{
     border-top: 5px solid #d03333;
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
 }
 .menu ul{
+    display: flex;
     padding: 0 10px;
+}
+.menu ul li:after{
+    content: '|';
+    color: white;
+    margin: 0;
+}
+.menu ul li:last-child:after{
+    display: none;
 }
 .menu a{
     color: white;
     text-decoration: none;
-    border-left: 1px solid white;
+    /*border-left: 1px solid white;*/
     padding: 0 30px;
 }
 .menu, .menu button{
@@ -76,8 +84,6 @@ header{
 .menu button:hover{
     background-color: #5d8f16;
     border-color: #2f6321;
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
 }
 .buscar{
     display: flex;
@@ -155,10 +161,8 @@ header{
     -webkit-transition: 0.25s;
     transition: 0.25s;
 }
-.img-art:hover{
+.img-art:hover, .articulo:hover .img-art{
     opacity: 0.75;
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
 }
 footer nav{
     display: flex;
